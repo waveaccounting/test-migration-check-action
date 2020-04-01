@@ -6,6 +6,6 @@ jobs:
     steps:
       - name: Check migration files step
         id: migrations
-        uses: waveaccounting/migration-check-action@v0.0.5
+        uses: waveaccounting/migration-check-action@v0.0.6
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
