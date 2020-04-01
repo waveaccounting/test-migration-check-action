@@ -1,4 +1,4 @@
-on: [push]
+on: [push, pull_request]
 jobs:
   migration-check:
     runs-on: ubuntu-latest
@@ -6,6 +6,6 @@ jobs:
     steps:
       - name: Check migration files step
         id: migrations
-        uses: waveaccounting/migration-check-action@v0.0.1
+        uses: waveaccounting/migration-check-action@v0.0.2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
