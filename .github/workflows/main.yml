@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: Check migration files step
         id: migrations
-        uses: waveaccounting/migration-check-action@v0.0.1
+        uses: waveaccounting/migration-check-action@add-datateam-as-reviewer
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           project-type: rails
