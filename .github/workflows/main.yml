@@ -6,6 +6,6 @@ jobs:
     steps:
       - name: Check migration files step
         id: migrations
-        uses: waveaccounting/migration-check-action@fix-review-request
+        uses: waveaccounting/migration-check-action@add-details-comment
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
